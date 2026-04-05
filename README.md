@@ -53,56 +53,12 @@ Data extraction and API integration project demonstrating real-time data retriev
 - **Highlights**: Real-time data collection, efficient data handling
 - 🔗 [View Repository](https://github.com/dipesh4000/redditAPI)
 
-### 📚 **DSA Solutions & Implementations**
-Comprehensive collection of Data Structures and Algorithms problems with optimized solutions and detailed explanations.
-- **Tech**: Python
-- **Topics**: Arrays, Linked Lists, Trees, Graphs, DP, Sorting, Searching, Greedy Algorithms
-- **Focus**: Problem-solving & Algorithmic Thinking, Big O Analysis
-- **Features**: 100+ solved problems, optimization techniques
-- 🔗 [View Repository](https://github.com/dipesh4000/DSA)
-
-### 🤖 **Next.js AI Chatbot**
-Modern AI-powered chatbot application built with cutting-edge technologies.
-- **Tech**: Next.js, TypeScript, AI Integration, REST APIs
-- **Features**: Real-time responses, Modern UI, Interactive conversations
-- **Highlights**: Seamless user experience, responsive design
-- 🔗 [View Repository](https://github.com/dipesh4000/nextjs-ai-chatbot)
-
-### 🏥 **HerAPT - MERN Full-Stack Application**
-Comprehensive full-stack project demonstrating complete MERN stack capabilities and best practices.
-- **Tech**: MongoDB, Express, React, Node.js
-- **Skills**: Full-stack development, API design, Database management, Authentication
-- **Features**: User authentication, database operations, responsive UI
-- **Highlights**: Production-ready code, scalable architecture
-- 🔗 [View Repository](https://github.com/dipesh4000/HerAPT-mern-)
-
-### 🤖 **Chatbots Collection**
-Multiple chatbot projects exploring conversational AI and Natural Language Processing.
-- **Tech**: HTML, CSS, JavaScript, AI APIs, NLP
-- **Focus**: Human-computer interaction, Dialog systems, Intent recognition
-- **Projects**: Multiple chatbot implementations with different functionalities
-- 🔗 [View Repository](https://github.com/dipesh4000/Chatbots)
-
 ### 🧠 **ML Models & Projects**
 Machine Learning projects and model implementations exploring various algorithms and techniques.
 - **Tech**: Python, Scikit-learn, TensorFlow/Keras, NumPy, Pandas
 - **Topics**: Supervised Learning, Model Evaluation, Feature Engineering, Data Preprocessing
 - **Focus**: Model optimization, cross-validation, hyperparameter tuning
 - 📊 [ML Models](https://github.com/dipesh4000/Ml_models_start) | [ML Projects](https://github.com/dipesh4000/ML_projects)
-
-### 🔐 **Smart Contracts & NFT**
-Blockchain development exploration with Solidity smart contracts.
-- **Tech**: Solidity, Ethereum, Smart Contracts, Web3
-- **Focus**: Decentralized applications, blockchain concepts, gas optimization
-- **Features**: NFT implementation, contract deployment
-- 🔗 [View Repository](https://github.com/dipesh4000/nft)
-
-### 💼 **GitPaid - Hackathon Project**
-Open-source funding platform developed during Hack-Aviensis hackathon.
-- **Tech**: TypeScript, Full-stack Development, Web3 Integration
-- **Features**: Funding mechanism, user profiles, project showcase
-- **Highlights**: Hackathon award winner, innovative concept
-- 🔗 [View Repository](https://github.com/dipesh4000/gitpaid-msit)
 
 ### 🗄️ **Database Projects**
 SQL Server and database design projects implementing complex queries and relationships.
@@ -124,14 +80,6 @@ Collection of 30 practical projects using vanilla JavaScript, HTML, and CSS.
 - **Projects**: Interactive games, utilities, UI components, web apps
 - **Focus**: DOM manipulation, event handling, JavaScript fundamentals
 - 🔗 [View Repository](https://github.com/dipesh4000/30projects)
-
-### 🎓 **Jovian Clone - Job Search Platform**
-Clone of Jovian job search website demonstrating frontend development skills.
-- **Tech**: HTML, CSS, Responsive Design
-- **Features**: Job listings, search functionality, responsive layout
-- **Highlights**: Pixel-perfect design, mobile-friendly
-- 🔗 [View Repository](https://github.com/dipesh4000/Jovian_Clone)
-
 ---
 
 ## 🧠 Data Structures & Algorithms Expertise
