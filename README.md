@@ -167,7 +167,7 @@ I'm always excited to:
 
 ### Open To
 - 💼 **Data Science Roles** - ML Engineer, Data Analyst
-- 👨‍💻 **Development Roles** - Full-Stack Developer, Backend Engineer
+- 👨‍💻 **Development Roles** - Backend Engineer(Python)
 - 🔄 **Hybrid Opportunities** - Combining data and development expertise
 - 🤖 **AI/ML Projects** - LLM applications, NLP, Computer Vision
 - 🏢 **Startups & Innovation** - Building from scratch, rapid prototyping
