@@ -17,7 +17,6 @@ I'm a collaborative and friendly tech enthusiast with a genuine passion for lear
 ### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
@@ -150,7 +149,7 @@ Clone of Jovian job search website demonstrating frontend development skills.
 
 ---
 
-## 🌱 Currently Learning & Exploring
+## 🌱 Currently Learning & Exploring & Future Goals
 - 🚀 **Advanced Machine Learning** - Deep Learning, Neural Networks
 - ☁️ **Cloud Technologies** - AWS, Google Cloud Platform, Deployment
 - 🏗️ **System Design & Architecture** - Scalability, Load Balancing, Microservices
