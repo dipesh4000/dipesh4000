@@ -42,77 +42,18 @@ I'm a collaborative and friendly tech enthusiast with a genuine passion for lear
 - **Blockchain & Smart Contracts** (Solidity)
 - **LLMs** | **Generative AI Applications**
 
----
-
-## 🏆 Featured Projects
-
-### 🔗 **Reddit API Integration** 
-Data extraction and API integration project demonstrating real-time data retrieval and processing capabilities.
-- **Tech**: Python, REST APIs, Data Processing, Web Scraping
-- **Skills**: API Integration, Data Parsing, Error Handling, Rate Limiting
-- **Highlights**: Real-time data collection, efficient data handling
-- 🔗 [View Repository](https://github.com/dipesh4000/redditAPI)
-
-### 🧠 **ML Models & Projects**
-Machine Learning projects and model implementations exploring various algorithms and techniques.
-- **Tech**: Python, Scikit-learn, TensorFlow/Keras, NumPy, Pandas
-- **Topics**: Supervised Learning, Model Evaluation, Feature Engineering, Data Preprocessing
-- **Focus**: Model optimization, cross-validation, hyperparameter tuning
-- 📊 [ML Models](https://github.com/dipesh4000/Ml_models_start) | [ML Projects](https://github.com/dipesh4000/ML_projects)
-
-### 🗄️ **Database Projects**
-SQL Server and database design projects implementing complex queries and relationships.
-- **Tech**: SQL Server (T-SQL), Database Design, Query Optimization
-- **Skills**: Stored procedures, indexing, normalization, performance tuning
-- **Focus**: Database architecture, complex queries
-- 🔗 [View Repository](https://github.com/dipesh4000/Database_Projects)
-
-### 📖 **ReadEarn - Platform**
-Innovative web application where users earn while reading research papers.
-- **Tech**: JavaScript, React, Node.js, MongoDB, Web Development
-- **Features**: User authentication, paper management, reward system
-- **Highlights**: Unique business model, engaging UX
-- 🔗 [View Repository](https://github.com/dipesh4000/readearn)
-
-### 📚 **30 JavaScript Projects**
-Collection of 30 practical projects using vanilla JavaScript, HTML, and CSS.
-- **Tech**: Vanilla JavaScript, HTML5, CSS3
-- **Projects**: Interactive games, utilities, UI components, web apps
-- **Focus**: DOM manipulation, event handling, JavaScript fundamentals
-- 🔗 [View Repository](https://github.com/dipesh4000/30projects)
----
-
-## 🧠 Data Structures & Algorithms Expertise
-
-### Core Competencies
-- ✅ **Arrays & Strings** - Manipulation, Searching, Sorting, Two Pointers
-- ✅ **Linked Lists, Stacks & Queues** - Operations, Applications, Recursion
-- ✅ **Trees & Graphs** - DFS, BFS, Traversals, Shortest Path, Tree Algorithms
-- ✅ **Sorting & Searching** - Bubble Sort, Merge Sort, Quick Sort, Binary Search, Advanced Search
-- ✅ **Dynamic Programming** - Memoization, Tabulation, Optimization, DP Patterns
-- ✅ **Hashing & Hash Tables** - Collision Resolution, Custom Hashing, Hash Functions
-- ✅ **Greedy Algorithms** - Greedy Choice, Optimization Problems
-- ✅ **Time & Space Complexity Analysis** - Big O Notation, Analysis Techniques
-- ✅ **Graph Algorithms** - Dijkstra, BFS, DFS, Floyd-Warshall, Kruskal's Algorithm
-
----
-
 ## 🌱 Currently Learning & Exploring & Future Goals
 - 🚀 **Advanced Machine Learning** - Deep Learning, Neural Networks
 - ☁️ **Cloud Technologies** - AWS, Google Cloud Platform, Deployment
 - 🏗️ **System Design & Architecture** - Scalability, Load Balancing, Microservices
 - 📊 **Data Engineering** - ETL Pipelines, Big Data Tools, Data Warehousing
 - 🤖 **Large Language Models** - LLM Integration, Fine-tuning, Prompt Engineering
-- 🔐 **Advanced Security** - Cybersecurity, Encryption, Security Best Practices
-- 📱 **Mobile Development** - React Native, Flutter exploration
 
 ---
 
 ## 🎓 My Journey
 
 I started my tech journey with **Data Structures and Algorithms**, building strong problem-solving foundations. I then transitioned into **web development**, mastering HTML, CSS, and JavaScript to create interactive user interfaces. 
-
-My exploration of **full-stack development** with the MERN stack allowed me to understand complete application architecture from frontend to backend. This led me to explore **machine learning and data science** with Python, combining my passion for both development and data.
 
 Currently, I'm enthusiastic about **AI, chatbots, and emerging technologies** like blockchain and Web3. My goal is to leverage my diverse skill set to build impactful applications that bridge development and data science. I'm particularly interested in roles that combine **software engineering excellence with data-driven decision making**.
 
