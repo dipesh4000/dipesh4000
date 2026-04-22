@@ -65,7 +65,7 @@ Currently, I'm enthusiastic about **AI, chatbots, and emerging technologies** li
 ![dipesh4000's GitHub stats](https://github-readme-stats.vercel.app/api?username=dipesh4000&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&card_width=500)
 
 ### Language Distribution
-[!Top Languages]([https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=compact&theme=radical&hide_border=true&langs_count=10](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=compact&theme=radical&hide_border=true&langs_count=10))
+[!Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=compact&theme=radical&hide_border=true&langs_count=10)
 ### Contribution Streak
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=dipesh4000&theme=radical&hide_border=true&background=0D1117)
 
