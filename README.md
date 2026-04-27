@@ -102,7 +102,7 @@ Contributing to community-driven ML & data projects
   <tr>
       
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true)
-[![trophy](https://github-profile-trophy.vercel.app/?username=dipesh4000&theme=radical&column=4&row=2&no-frame=true)](https://github.com/dipesh4000)
+[![trophy](https://github-profile-trophy.vercel.app/?username=dipesh4000&theme=radical&column=4&row=2&no-frame=true)]
 
       
 | Language | Primary Use |
