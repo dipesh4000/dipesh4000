@@ -91,7 +91,36 @@ I'm a **result-oriented developer** focused on building **production-grade Machi
 Contributing to community-driven ML & data projects
 
 ---
+### Contribution Activity
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dipesh4000&theme=github-dark&hide_border=true)
 
+### Top Languages & Stats
+<table>
+  <tr>
+    <td valign="top" width="55%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true" alt="Top Languages" />
+    </td>
+    <td valign="top" width="45%">
+      <table>
+        <tr><th align="left">Language</th><th align="left">Primary Use</th></tr>
+        <tr><td><strong>Python</strong></td><td>ML, Data, Backend</td></tr>
+        <tr><td><strong>SQL</strong></td><td>Database, ETL</td></tr>
+        <tr><td><strong>JavaScript</strong></td><td>Frontend</td></tr>
+        <tr><td><strong>TypeScript</strong></td><td>Full-Stack</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+### Achievements & Milestones
+<div align="center">
+  <img src="https://img.shields.io/github/followers/dipesh4000?label=Followers&style=for-the-badge" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/dipesh4000/Spacestation_objects_detection_duality?label=Spacestation+Stars&style=for-the-badge" alt="Spacestation Stars" />
+  <br/><br/>
+  <a href="https://skyline.github.com/dipesh4000" target="_blank">
+    <img src="https://skyline.github.com/dipesh4000.svg" alt="GitHub Skyline" />
+  </a>
+</div>
 ## 📊 GitHub Analytics
 
 ### Contribution Activity
