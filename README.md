@@ -100,7 +100,6 @@ Contributing to community-driven ML & data projects
 ### Top Languages & Stats
 <table>
   <tr>
-    <td width="50%">
       
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true)
 
@@ -124,11 +123,11 @@ Contributing to community-driven ML & data projects
 
 ```
 ┌─ Languages ──────────────────────────────────────────┐
-│ Python 🔴🔴🔴  SQL 🔴🔴🔴  JavaScript 🔴🔴    │
+│ Python 🔴🔴🔴  SQL 🔴🔴🔴  JavaScript 🔴🔴       │
 ├─ ML & Data Sci ──────────────────────────────────────┤
 │ • Scikit-learn, XGBoost, LightGBM                    │
-│ • Pandas, NumPy, Matplotlib, Seaborn                │
-│ • YOLOv8, Deep Learning                             │
+│ • Pandas, NumPy, Matplotlib, Seaborn                 │
+│ • YOLOv8, Deep Learning                              │
 ├─ Backend & APIs ─────────────────────────────────────┤
 │ • FastAPI, Flask                                     │
 │ • PostgreSQL, MongoDB, SQL Server                    │
@@ -139,34 +138,12 @@ Contributing to community-driven ML & data projects
 ├─ DevOps & Tools ─────────────────────────────────────┤
 │ • Docker, Git/GitHub, Jupyter Notebook               │
 │ • VS Code, Postman, Heroku                           │
-└────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🎯 Current Learning Path
 
-Focused on becoming a **strong ML Engineer** with production-grade skills:
-
-- 📚 **Advanced ML Algorithms** - Deep Learning, Neural Networks, Transformers
-- ☁️ **Cloud Deployment** - AWS, Docker, Kubernetes basics
-- 🏗️ **System Design** - Scalability, caching, load balancing
-- 📊 **Data Engineering** - Advanced ETL, streaming, feature stores
-- 🚀 **MLOps** - Model versioning, monitoring, A/B testing
-
----
-
-## 📈 2026 Goals
-
-| Goal | Status | Timeline |
-|------|--------|----------|
-| 🏆 Build 3 production-ready ML projects | 🟡 In Progress | Q2-Q3 2026 |
-| 🌟 Reach 500+ GitHub stars | 🔄 Working on it | Q3 2026 |
-| 🤝 Contribute to major open-source projects | ✅ Started | Ongoing |
-| 📚 Complete advanced ML/System Design courses | 🟡 In Progress | Q2-Q4 2026 |
-| 🚀 **Land ML Engineer / Data Science role** | 🎯 PRIMARY GOAL | Q2-Q3 2026 |
-
----
 
 ## 🤝 Let's Connect & Collaborate
 
@@ -189,7 +166,7 @@ Focused on becoming a **strong ML Engineer** with production-grade skills:
 
 ## 🎓 Education & Learning
 
-- 📖 Continuous learning through online courses (Andrew Ng, Fast.ai, Kaggle)
+- 📖 Continuous learning through online courses
 - 🏆 LeetCode problems for algorithm mastery
 - 📚 Open-source contributions and community engagement
 - 🔬 Personal projects with real-world datasets
