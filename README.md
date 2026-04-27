@@ -91,6 +91,8 @@ I'm a **result-oriented developer** focused on building **production-grade Machi
 Contributing to community-driven ML & data projects
 
 ---
+## 📊 GitHub Analytics
+
 ### Contribution Activity
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dipesh4000&theme=github-dark&hide_border=true)
 
@@ -121,30 +123,6 @@ Contributing to community-driven ML & data projects
     <img src="https://skyline.github.com/dipesh4000.svg" alt="GitHub Skyline" />
   </a>
 </div>
-## 📊 GitHub Analytics
-
-### Contribution Activity
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dipesh4000&theme=github-dark&hide_border=true)
-
-### Top Languages & Stats
-<table>
-  <tr>
-      
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true)
-[![trophy](https://github-profile-trophy.vercel.app/?username=dipesh4000&theme=radical&column=4&row=2&no-frame=true)]
-
-      
-| Language | Primary Use |
-|----------|------------|
-| **Python** | ML, Data, Backend |
-| **SQL** | Database, ETL |
-| **JavaScript** | Web Frontend |
-| **TypeScript** | Full-Stack |
-
-  </tr>
-</table>
-
----
 
 ## 💻 Tech Stack at a Glance
 
