@@ -103,8 +103,6 @@ Contributing to community-driven ML & data projects
       
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true)
 
-    </td>
-    <td width="50%">
       
 | Language | Primary Use |
 |----------|------------|
@@ -113,7 +111,6 @@ Contributing to community-driven ML & data projects
 | **JavaScript** | Web Frontend |
 | **TypeScript** | Full-Stack |
 
-    </td>
   </tr>
 </table>
 
