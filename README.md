@@ -1,139 +1,233 @@
 # 👋 Hey, I'm Dipesh Kumar
 
-**Python Enthusiast | ML & DSA Practitioner**
+**Machine Learning Engineer | Python Backend Developer | Data Enthusiast**
 
-📍 New Delhi, India | 🚀 Passionate about bridging data, development, and AI
+📍 New Delhi, India | 🚀 Building ML systems & data-driven applications
 
 ---
 
 ## 🎯 About Me
 
-I'm a collaborative and friendly tech enthusiast with a genuine passion for learning and building. I thrive in dynamic environments where I can contribute to meaningful projects while continuously expanding my skill set. My goal is to blend data-driven insights with robust software development to create impactful solutions. I'm exploring opportunities that bridge **data roles and development roles**, with a strong focus on **Python**.
+I'm a **result-oriented developer** focused on building **production-grade Machine Learning systems** and **data pipelines**. I specialize in transforming raw data into intelligent solutions through strong software engineering practices.
+
+**Current Focus**: Machine Learning Engineering • Data Science • Backend Development (Python/FastAPI)
+
+**Open To**: Junior ML Engineer roles • Junior Data Scientist roles • MLOps Engineer positions • Backend roles with ML focus
 
 ---
 
-## 💻 Tech Stack
+## 💪 Core Competencies
 
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+### 🧠 Machine Learning & AI
+- **Computer Vision**: YOLOv8, object detection, synthetic data handling
+- **Supervised Learning**: Classification, regression, hyperparameter tuning (Scikit-learn, XGBoost, LightGBM)
+- **Data Processing**: Feature engineering, EDA, data cleaning (Pandas, NumPy)
+- **Model Evaluation**: Cross-validation, metrics analysis, A/B testing
+- **Deployment**: Model serving via APIs, versioning, monitoring
 
-### Frontend
-- **HTML5 & CSS3**
-- **Responsive Design** & UI/UX Implementation
+### 🔧 Backend & APIs
+- **Framework**: FastAPI, Flask
+- **Database Design**: PostgreSQL, MongoDB, SQL Server, MySQL
+- **Database Skills**: SQL optimization, ETL pipelines, data warehousing (Medallion Architecture)
+- **API Development**: RESTful services, JWT authentication, CRUD operations
+- **Tools**: Git, Docker, Jupyter Notebook, VS Code, Postman
 
-### Backend & Data
-- **Flask** | **FastAPI**
-- **Pandas** | **NumPy** | **Scikit-learn** | **Jupyter Notebook**
-- **Data Analysis** & **Visualization** (Matplotlib, Seaborn)
-- **API Development** & RESTful Services
-
-### Databases & Tools
-- **MySQL** | **MongoDB** | **SQL Server** | **PostgreSQL**
-- **Git & GitHub** | **Docker** | **REST APIs**
-- **VS Code** | **Jupyter Notebook** | **Postman**
-
-### Emerging Technologies
-- **AI & Machine Learning** | **Chatbots & NLP**
-- **Blockchain & Smart Contracts** (Solidity)
-- **LLMs** | **Generative AI Applications**
-
-## 🌱 Currently Learning & Exploring & Future Goals
-- 🚀 **Advanced Machine Learning** - Deep Learning, Neural Networks
-- ☁️ **Cloud Technologies** - AWS, Google Cloud Platform, Deployment
-- 🏗️ **System Design & Architecture** - Scalability, Load Balancing, Microservices
-- 📊 **Data Engineering** - ETL Pipelines, Big Data Tools, Data Warehousing
-- 🤖 **Large Language Models** - LLM Integration, Fine-tuning, Prompt Engineering
+### 📊 Data Engineering
+- **ETL Pipelines**: Bronze → Silver → Gold data architecture
+- **Data Warehousing**: SQL, data modeling, fact/dimension tables
+- **Data Quality**: Validation, cleansing, normalization
 
 ---
 
-## 🎓 My Journey
+## 🚀 Featured Projects
 
-I started my tech journey with **Data Structures and Algorithms**, building strong problem-solving foundations. I then transitioned into **web development**, mastering HTML, CSS, and JavaScript to create interactive user interfaces. 
+### 1. **Spacestation Objects Detection** 🛰️ ⭐⭐⭐⭐⭐
+**Computer Vision | Object Detection**
 
-Currently, I'm enthusiastic about **AI, chatbots, and emerging technologies** like blockchain and Web3. My goal is to leverage my diverse skill set to build impactful applications that bridge development and data science. I'm particularly interested in roles that combine **software engineering excellence with data-driven decision making**.
+- Trained **YOLOv8** model on synthetic datasets for space station object detection
+- **Real-world deployment**: Tested on actual space imagery
+- **Metrics**: Multi-class detection with precision/recall analysis
+- **Tech**: Python, YOLOv8, Jupyter, Computer Vision
+- **Link**: [github.com/dipesh4000/Spacestation_objects_detection_duality](https://github.com/dipesh4000/Spacestation_objects_detection_duality)
+- **Highlights**:
+  - ✅ Synthetic data handling & augmentation
+  - ✅ Production-ready inference pipeline
+  - ✅ Performance benchmarking
+
+### 2. **ML Projects Portfolio** 📈
+**Machine Learning | End-to-End Pipelines**
+
+- **Movie Recommender System**: Similarity-based engine with Streamlit UI
+- **Email Spam Classifier**: Text preprocessing + ML model + Heroku deployment
+- **Tech**: Python, Scikit-learn, Pandas, Streamlit
+- **Link**: [github.com/dipesh4000/ML_projects](https://github.com/dipesh4000/ML_projects)
+- **Key Learnings**: Full ML lifecycle from data → deployment
+
+### 3. **Database & Backend Engineering** 🗄️
+**Data Engineering | Backend Development**
+
+- **FastAPI CRUD Application**: RESTful API with PostgreSQL integration
+- **SQL Data Warehouse**: Medallion architecture (Bronze/Silver/Gold layers)
+  - Bronze: Raw data ingestion
+  - Silver: Data transformation & cleaning
+  - Gold: Analytics-ready tables (star schema)
+- **ETL Pipelines**: Stored procedures, data quality checks, naming conventions
+- **Tech**: FastAPI, PostgreSQL, SQL, SQLAlchemy, Python
+- **Link**: [github.com/dipesh4000/Database_Projects](https://github.com/dipesh4000/Database_Projects)
+- **Demonstrates**: Data modeling, backend architecture, production-grade SQL
+
+### 4. **Reddit-like REST API** 🔐
+**Backend Development | Authentication**
+
+- User authentication with JWT tokens
+- CRUD operations on posts with role-based access
+- Password hashing with Argon2
+- Owner-only authorization for edits/deletes
+- **Tech**: FastAPI, PostgreSQL, JWT, psycopg2
+- **Link**: [github.com/dipesh4000/redditAPI](https://github.com/dipesh4000/redditAPI)
+- **Highlights**: Production-level backend patterns
+
+### 5. **Open Source Contributions** 🌐 *(In Progress)*
+Contributing to community-driven ML & data projects
 
 ---
 
-## 📊 GitHub Analytics & Stats
+## 📊 GitHub Analytics
 
-### Overall Activity
-![dipesh4000's GitHub stats](https://github-readme-stats.vercel.app/api?username=dipesh4000&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&card_width=500)
+### Contribution Activity
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dipesh4000&theme=github-dark&hide_border=true)
 
-### Language Distribution
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=compact&theme=radical&hide_border=true&langs_count=10)
-### Contribution Streak
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=dipesh4000&theme=radical&hide_border=true&background=0D1117)
+### Top Languages & Stats
+<table>
+  <tr>
+    <td width="50%">
+      
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dipesh4000&layout=pie&theme=github_dark&hide_border=true)
 
-### Contribution Graph
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dipesh4000&theme=radical&hide_border=true&bg_color=0D1117)
+    </td>
+    <td width="50%">
+      
+| Language | Primary Use |
+|----------|------------|
+| **Python** | ML, Data, Backend |
+| **SQL** | Database, ETL |
+| **JavaScript** | Web Frontend |
+| **TypeScript** | Full-Stack |
 
-### Achievements & Milestones
-[![trophy](https://github-profile-trophy.vercel.app/?username=dipesh4000&theme=radical&column=4&row=2&no-frame=true)](https://github.com/dipesh4000)
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🎯 Quick Stats at a Glance
+## 💻 Tech Stack at a Glance
 
-| Metric | Details |
-|--------|---------|
-| 📁 **Repositories** | 14+ Public Projects |
-| 💻 **Primary Languages** | Python, JavaScript, TypeScript |
-| 🔗 **Tech Stack** | MERN, Flask, FastAPI, Scikit-learn |
-| 🎓 **Focus Areas** | Full-Stack Dev, Data Science, ML |
-| 🚀 **Current Goal** | Data + Development Hybrid Roles |
-| 📍 **Location** | New Delhi, India |
+```
+┌─ Languages ──────────────────────────────────────────┐
+│ Python 🔴🔴🔴  SQL 🔴🔴🔴  JavaScript 🔴🔴    │
+├─ ML & Data Sci ──────────────────────────────────────┤
+│ • Scikit-learn, XGBoost, LightGBM                    │
+│ • Pandas, NumPy, Matplotlib, Seaborn                │
+│ • YOLOv8, Deep Learning                             │
+├─ Backend & APIs ─────────────────────────────────────┤
+│ • FastAPI, Flask                                     │
+│ • PostgreSQL, MongoDB, SQL Server                    │
+│ • JWT, REST APIs, SQLAlchemy                         │
+├─ Data Engineering ───────────────────────────────────┤
+│ • ETL Pipelines, Data Warehousing                    │
+│ • Medallion Architecture, SQL Optimization           │
+├─ DevOps & Tools ─────────────────────────────────────┤
+│ • Docker, Git/GitHub, Jupyter Notebook               │
+│ • VS Code, Postman, Heroku                           │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🎯 Current Learning Path
+
+Focused on becoming a **strong ML Engineer** with production-grade skills:
+
+- 📚 **Advanced ML Algorithms** - Deep Learning, Neural Networks, Transformers
+- ☁️ **Cloud Deployment** - AWS, Docker, Kubernetes basics
+- 🏗️ **System Design** - Scalability, caching, load balancing
+- 📊 **Data Engineering** - Advanced ETL, streaming, feature stores
+- 🚀 **MLOps** - Model versioning, monitoring, A/B testing
+
+---
+
+## 📈 2026 Goals
+
+| Goal | Status | Timeline |
+|------|--------|----------|
+| 🏆 Build 3 production-ready ML projects | 🟡 In Progress | Q2-Q3 2026 |
+| 🌟 Reach 500+ GitHub stars | 🔄 Working on it | Q3 2026 |
+| 🤝 Contribute to major open-source projects | ✅ Started | Ongoing |
+| 📚 Complete advanced ML/System Design courses | 🟡 In Progress | Q2-Q4 2026 |
+| 🚀 **Land ML Engineer / Data Science role** | 🎯 PRIMARY GOAL | Q2-Q3 2026 |
 
 ---
 
 ## 🤝 Let's Connect & Collaborate
 
-I'm always excited to:
-- 🤝 Collaborate on interesting and innovative projects
-- 💬 Discuss cutting-edge tech, data science, and software development
-- 📚 Help others learn and grow in their tech journey
-- 🔍 Explore new technologies and emerging trends
-- 🌐 Network with like-minded developers and data enthusiasts
+**I'm actively looking for**:
+- 💼 ML Engineer (Junior) positions
+- 📊 Data Scientist (Junior) roles
+- 🚀 MLOps / ML Backend Engineer opportunities
+- 🤝 Open-source collaboration on ML/data projects
+- 💡 Interesting projects to contribute to
 
 ### Connect With Me
-- 💼 **LinkedIn**: [linkedin.com/in/dipesh4000](https://linkedin.com/in/dipesh4000)
-- 📧 **Email**: [dipeshkumar0853822@gmail.com](mailto:dipeshkumar0853822@gmail.com)
-- 🐦 **Twitter**: [@dipesh4000](https://x.com/GoPokemon20)
-- 💻 **GitHub**: [github.com/dipesh4000](https://github.com/dipesh4000)
-
-### Open To
-- 💼 **Data Science Roles** - ML Engineer, Data Analyst
-- 👨‍💻 **Development Roles** - Backend Engineer(Python)
-- 🔄 **Hybrid Opportunities** - Combining data and development expertise
-- 🤖 **AI/ML Projects** - LLM applications, NLP, Computer Vision
-- 🏢 **Startups & Innovation** - Building from scratch, rapid prototyping
+| Platform | Link |
+|----------|------|
+| 💼 LinkedIn | [linkedin.com/in/dipesh4000](https://linkedin.com/in/dipesh4000) |
+| 📧 Email | [dipeshkumar0853822@gmail.com](mailto:dipeshkumar0853822@gmail.com) |
+| 🐦 Twitter/X | [@dipesh4000](https://x.com/GoPokemon20) |
+| 💻 GitHub | [github.com/dipesh4000](https://github.com/dipesh4000) |
 
 ---
 
-## 💡 Fun Facts
-- 🎮 Love solving algorithmic problems in my spare time
-- 📖 Continuously learning through online courses and side projects
-- 🌍 Passionate about open-source contributions
-- 🚀 Excited about the future of AI and software engineering
-- ☕ Coffee-fueled developer who loves late-night coding sessions
+## 🎓 Education & Learning
+
+- 📖 Continuous learning through online courses (Andrew Ng, Fast.ai, Kaggle)
+- 🏆 LeetCode problems for algorithm mastery
+- 📚 Open-source contributions and community engagement
+- 🔬 Personal projects with real-world datasets
 
 ---
 
-## 📈 Goals for 2026
-- 🎯 Contribute to open-source projects
-- 🏆 Build 3+ production-ready applications
-- 📚 Deepen ML and System Design knowledge
-- 🌟 Grow GitHub presence and community engagement
-- 🚀 Land a role bridging Data & Development
+## 💡 Why Work With Me?
+
+✅ **Strong Fundamentals**: DSA, system design, software engineering best practices
+✅ **Practical Experience**: Built and deployed ML models + backend systems
+✅ **Production Mindset**: Focus on code quality, testing, documentation
+✅ **Continuous Learner**: Adapting to new technologies and industry trends
+✅ **Collaborative**: Passionate about knowledge sharing and team growth
 
 ---
 
-### ⭐ If you find my work interesting, please feel free to star my repositories!
+## 🚀 Quick Links
+
+- 🔬 **Best ML Project**: [Spacestation Object Detection](https://github.com/dipesh4000/Spacestation_objects_detection_duality)
+- 🏗️ **Backend Showcase**: [Database & API Projects](https://github.com/dipesh4000/Database_Projects)
+- 💻 **All Projects**: [github.com/dipesh4000?tab=repositories](https://github.com/dipesh4000?tab=repositories)
 
 ---
 
-*Last Updated: April 2026* | [View Profile](https://github.com/dipesh4000)
+## 📝 Latest Updates
+
+- 🎯 **April 2026**: Contributing to open-source ML projects, optimizing existing models
+- 🏆 **Actively Interviewing**: Looking for ML Engineer & Data Science roles
+- 📚 **Deepening**: Advanced ML concepts, system design, production ML practices
+
+---
+
+<div align="center">
+
+### ⭐ If you find my work interesting, please star my repositories! It helps me grow the community.
+
+**[GitHub Profile](https://github.com/dipesh4000)** • **[LinkedIn](https://linkedin.com/in/dipesh4000)** • **[Email Me](mailto:dipeshkumar0853822@gmail.com)**
+
+*Last Updated: April 2026 | Open to Full-Time Opportunities*
+
+</div>
