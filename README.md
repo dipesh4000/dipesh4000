@@ -3,7 +3,7 @@
 **Machine Learning Engineer | Python Backend Developer | Data Enthusiast**
 
 <div align="center">
-  <img src="assets/rocket.svg" width="120" alt="Animated Rocket"/>
+  <img src="assests/rocket.svg" width="120" alt="Animated Rocket"/>
 </div>
 
 📍 New Delhi, India | 🚀 Building ML systems & data-driven applications
