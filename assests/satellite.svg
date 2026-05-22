@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orbit -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="8 8"/>
+  
+  <!-- Satellite -->
+  <g transform="rotate(0 60 60)">
+    <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="12s" repeatCount="indefinite"/>
+    <rect x="52" y="20" width="16" height="12" fill="#64748b" rx="2"/>
+    <rect x="45" y="28" width="30" height="8" fill="#475569"/>
+    <!-- Antenna -->
+    <line x1="60" y1="20" x2="60" y2="10" stroke="#94a3b8" stroke-width="3"/>
+  </g>
+</svg>
