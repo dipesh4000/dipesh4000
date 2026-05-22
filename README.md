@@ -3,20 +3,7 @@
 **Machine Learning Engineer | Python Backend Developer | Data Enthusiast**
 
 <div align="center">
-  <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-    <g>
-      <!-- Rocket body -->
-      <path d="M60 20 L45 70 L60 90 L75 70 Z" fill="#3b82f6"/>
-      <!-- Flames -->
-      <path d="M50 85 Q60 110 70 85" fill="#f97316">
-        <animate attributeName="opacity" values="0.7;1;0.7" dur="0.8s" repeatCount="indefinite"/>
-      </path>
-      <!-- Thruster animation -->
-      <circle cx="60" cy="95" r="8" fill="#ef4444">
-        <animate attributeName="r" values="6;10;6" dur="0.6s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-  </svg>
+  <img src="assets/rocket.svg" width="120" alt="Animated Rocket"/>
 </div>
 
 📍 New Delhi, India | 🚀 Building ML systems & data-driven applications
