@@ -1,0 +1,41 @@
+<svg width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+  <title id="title">Animated Rocket</title>
+  <desc id="desc">A flying rocket with pulsing flames</desc>
+  
+  <!-- Rocket Body -->
+  <path d="M60 20 L45 70 L60 95 L75 70 Z" fill="#3b82f6" stroke="#1e40af" stroke-width="8"/>
+  
+  <!-- Rocket Windows -->
+  <circle cx="60" cy="45" r="8" fill="#dbeafe"/>
+  <circle cx="60" cy="65" r="8" fill="#dbeafe"/>
+  
+  <!-- Wings -->
+  <path d="M45 70 L30 85 L45 80 Z" fill="#1e40af"/>
+  <path d="M75 70 L90 85 L75 80 Z" fill="#1e40af"/>
+  
+  <!-- Flame Container -->
+  <g id="flames">
+    <!-- Main Flame -->
+    <path d="M50 95 Q60 125 70 95" fill="#f97316">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="0.6s" repeatCount="indefinite"/>
+    </path>
+    <!-- Inner Flame -->
+    <path d="M53 98 Q60 118 67 98" fill="#fef08c">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Thruster Glow -->
+  <circle cx="60" cy="102" r="12" fill="#ef4444" opacity="0.6">
+    <animate attributeName="r" values="10;14;10" dur="0.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Gentle floating animation -->
+  <animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    values="0 0; 0 -8; 0 0"
+    dur="3s"
+    repeatCount="indefinite"/>
+</svg>
