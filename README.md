@@ -29,7 +29,7 @@ I'm a **result-driven ML Engineer** who loves turning raw data into impactful so
 ## 💪 Core Skills
 
 <div align="center">
-  <img src="assets/neural-network.svg" width="220" alt="Neural Network Animation"/>
+  <img src="assests/neural-network.svg" width="220" alt="Neural Network Animation"/>
 </div>
 
 ### 🧠 Machine Learning & AI
