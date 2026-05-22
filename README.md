@@ -1,13 +1,13 @@
 # 👋 Hey, I'm Dipesh Kumar
 
 <div align="center">
-  <img src="assets/waving-hand.svg" width="80" alt="Waving Hand"/>
+  <img src="assests/waving-hand.svg" width="80" alt="Waving Hand"/>
 </div>
 
 **Machine Learning Engineer | Python Backend Developer | Data Enthusiast**
 
 <div align="center">
-  <img src="assets/rocket.svg" width="110" alt="Animated Rocket"/>
+  <img src="assests/rocket.svg" width="110" alt="Animated Rocket"/>
 </div>
 
 ---
@@ -61,7 +61,7 @@ I'm a **result-driven ML Engineer** who loves turning raw data into impactful so
 Production-ready object detection system trained on synthetic + real space imagery.
 
 <div align="center">
-  <img src="assets/satellite.svg" width="110" alt="Orbiting Satellite"/>
+  <img src="assests/satellite.svg" width="110" alt="Orbiting Satellite"/>
 </div>
 
 → **[View Project](https://github.com/dipesh4000/Spacestation_objects_detection_duality)**
