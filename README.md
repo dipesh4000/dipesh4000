@@ -1,3 +1,18 @@
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dipesh4000&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&card_width=500" alt="Dipesh's GitHub stats" />
-</p>
+<div align="center">
+
+
+---
+
+<!--
+https://github.community/t/support-theme-context-for-images-in-light-vs-dark-mode/147981/84
+-->
+<a href="https://github.com/dipesh4000/github-stats#gh-dark-mode-only">
+<img src="https://github.com/dipesh4000/github-stats/blob/generated/overview.svg#gh-dark-mode-only" />
+<img src="https://github.com/jstrieb/github-stats/blob/generated/languages.svg#gh-dark-mode-only" />
+</a>
+<a href="https://github.com/dipesh4000/github-stats#gh-light-mode-only">
+<img src="https://github.com/dipesh4000/github-stats/blob/generated/overview.svg#gh-dark-mode-only#gh-light-mode-only" />
+<img src="https://github.com/dipesh4000/github-stats/blob/generated/languages.svg#gh-dark-mode-only#gh-light-mode-only" />
+</a>
+
+</div>
