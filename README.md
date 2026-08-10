@@ -2,4 +2,4 @@
 
 
 
-The unusually high contributions is because of my dsa tracker, i am not actually that hardworking 🫡
+The unusually high contributions in my github account is because of my automatic dsa Progress tracker, i am not actually that hardworking 🫡
