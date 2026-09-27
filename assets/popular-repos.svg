@@ -4,23 +4,23 @@
   <text x="28" y="42" font-family="Arial, Helvetica, sans-serif" font-size="21px" font-weight="700" fill="#F2F2F2" text-anchor="start">Popular repositories</text>
 <text x="205" y="42" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#777" text-anchor="start">⌄</text>
 <rect x="28" y="58" width="260" height="124" rx="12" fill="#202020" stroke="#2C2C2C"/>
-<text x="46" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  Spacestation_objects_detection_duality</text>
-<text x="46" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">Robust object detection model made using…</text>
-<text x="46" y="132" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 5   ⑂ 0</text>
-<text x="46" y="158" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">Jupyter Notebook</text>
+<text x="46" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  typecat</text>
+<text x="46" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">No description provided.</text>
+<text x="46" y="132" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 0   ⑂ 0</text>
+<text x="46" y="158" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">TypeScript</text>
 <rect x="312" y="58" width="260" height="124" rx="12" fill="#202020" stroke="#2C2C2C"/>
 <text x="330" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  Whatsapp_chats_analyzer</text>
 <text x="330" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">A Streamlit web app to analyze exported…</text>
 <text x="330" y="132" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 4   ⑂ 0</text>
 <text x="330" y="158" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">Python</text>
 <rect x="28" y="200" width="260" height="124" rx="12" fill="#202020" stroke="#2C2C2C"/>
-<text x="46" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  portfolio-site</text>
-<text x="46" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">No description provided.</text>
-<text x="46" y="274" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 3   ⑂ 0</text>
-<text x="46" y="300" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">TypeScript</text>
+<text x="46" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  KuroCode-CLI</text>
+<text x="46" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">CLI tool</text>
+<text x="46" y="274" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 2   ⑂ 0</text>
+<text x="46" y="300" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">Python</text>
 <rect x="312" y="200" width="260" height="124" rx="12" fill="#202020" stroke="#2C2C2C"/>
-<text x="330" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  docs4llm</text>
-<text x="330" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">No description provided.</text>
-<text x="330" y="274" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 3   ⑂ 0</text>
-<text x="330" y="300" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">TypeScript</text>
+<text x="330" y="228" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14px" font-weight="600" fill="#F2F2F2" text-anchor="start">▱  live_chat</text>
+<text x="330" y="250" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="400" fill="#9A9A9A" text-anchor="start">WebSocket Chat with Redis &amp;amp; PostgreSQL</text>
+<text x="330" y="274" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="400" fill="#A7A7A7" text-anchor="start">★ 1   ⑂ 0</text>
+<text x="330" y="300" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="400" fill="#6F6F6F" text-anchor="start">HTML</text>
 </svg>

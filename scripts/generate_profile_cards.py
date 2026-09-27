@@ -261,12 +261,12 @@ def generate_about() -> None:
     write_svg(OUTPUTS["about"], svg_doc(870, 290, inner))
 
 # =========================================================
-# Card 2 — Codolio DSA statistics
+# Card 2 — Codolio DSA statistics (Compact Layout)
 # =========================================================
 
 
 def generate_dsa_stats(data: dict | None = None) -> None:
-    """Generate assets/dsa-stats.svg using the existing Codolio JSON source."""
+    """Generate assets/dsa-stats.svg using the existing Codolio JSON source with trimmed proportions."""
     data = data or fetch_codio()
     dsa = data.get("dsa", {})
 
@@ -284,22 +284,26 @@ def generate_dsa_stats(data: dict | None = None) -> None:
     contest = data.get("contest", {}) or {}
     contest_rating = int(contest.get("rating", 0) or 0)
     contests = int(contest.get("contests", 0) or 0)
-    last_updated = data.get("lastUpdated")
 
-    width, height = 390, 490
+    width, height = 400, 260
     parts: list[str] = []
 
     # Header
-    parts.append(svg_text("DSA STATISTICS", 28, 38, size=13, fill=SECONDARY, weight=700))
-    parts.append(svg_text("CODOLIO", width - 28, 38, size=11, fill=MUTED, weight=600, anchor="end"))
+    parts.append(svg_text("DSA STATISTICS", 24, 32, size=12, fill=SECONDARY, weight=700))
+    parts.append(svg_text("CODOLIO", width - 24, 32, size=11, fill=MUTED, weight=600, anchor="end"))
 
-    # Solved count
-    parts.append(svg_text(format_number(total), 28, 90, size=42, fill=PRIMARY, weight=700))
-    parts.append(svg_text("QUESTIONS SOLVED", 30, 112, size=11, fill=SECONDARY, weight=600))
+    # Solved block (left)
+    parts.append(svg_text(format_number(total), 24, 76, size=38, fill=PRIMARY, weight=700))
+    parts.append(svg_text("QUESTIONS SOLVED", 25, 96, size=9, fill=SECONDARY, weight=600))
 
-    # Difficulty
-    parts.append(svg_text("DIFFICULTY", 28, 145, size=11, fill=SECONDARY, weight=700))
+    # Contest pill (left)
+    parts.append('<rect x="24" y="112" width="128" height="42" rx="8" fill="#202020" stroke="#2D2D2D"/>')
+    parts.append(svg_text(f"★ {format_number(contest_rating)}", 34, 131, size=14, fill=PRIMARY, weight=700))
+    parts.append(svg_text(f"{contests} contests", 34, 145, size=9, fill=MUTED))
+    parts.append(svg_text(f"{current_streak}d streak", 142, 131, size=11, fill=GREEN, weight=600, anchor="end"))
 
+    # Difficulty bars (right)
+    parts.append(svg_text("DIFFICULTY", 175, 54, size=10, fill=SECONDARY, weight=700))
     rows = [
         ("Easy", easy, GREEN),
         ("Medium", medium, MEDIUM),
@@ -307,48 +311,26 @@ def generate_dsa_stats(data: dict | None = None) -> None:
         ("Other", other, OTHER),
     ]
 
-    for index, (label, value, color) in enumerate(rows):
-        y = 165 + index * 32
-        parts.append(svg_text(label, 28, y + 5, size=12, fill=PRIMARY, weight=500))
-        parts.append(progress_bar(105, y, 190, 6, value, total, color))
-        parts.append(svg_text(format_number(value), 320, y + 6, size=12, fill=PRIMARY, weight=600, anchor="end"))
+    for idx, (label, value, color) in enumerate(rows):
+        y = 66 + idx * 24
+        parts.append(svg_text(label, 175, y + 8, size=11, fill=PRIMARY, weight=500))
+        parts.append(progress_bar(222, y, 108, 6, value, total, color))
+        parts.append(svg_text(format_number(value), width - 24, y + 8, size=11, fill=PRIMARY, weight=600, anchor="end"))
 
     # Divider
-    parts.append(f'<line x1="28" y1="300" x2="{width - 28}" y2="300" stroke="{BORDER}" stroke-width="1"/>')
+    parts.append(f'<line x1="24" y1="172" x2="{width - 24}" y2="172" stroke="{BORDER}" stroke-width="1"/>')
 
-    # Quick stats
+    # Bottom 4 quick stats
     stats = [
-        ("MAX STREAK", max_streak, 28),
-        ("SUBMISSIONS", submissions, 150),
-        ("ACTIVE DAYS", active_days, 272),
+        ("MAX STREAK", f"{max_streak}d", 24),
+        ("SUBMISSIONS", format_number(submissions), 120),
+        ("ACTIVE DAYS", f"{active_days}d", 220),
+        ("CONTESTS", format_number(contests), 320),
     ]
 
     for label, value, x in stats:
-        parts.append(svg_text(format_number(value), x, 335, size=22, fill=PRIMARY, weight=700))
-        parts.append(svg_text(label, x, 354, size=9, fill=SECONDARY, weight=600))
-
-    # Contest section
-    parts.append(svg_text("CONTEST", 28, 390, size=11, fill=SECONDARY, weight=700))
-
-    parts.append(svg_text(format_number(contest_rating), 28, 420, size=25, fill=PRIMARY, weight=700))
-    parts.append(svg_text("RATING", 30, 438, size=9, fill=SECONDARY, weight=600))
-
-    parts.append(svg_text(format_number(contests), 150, 420, size=25, fill=PRIMARY, weight=700))
-    parts.append(svg_text("CONTESTS", 152, 438, size=9, fill=SECONDARY, weight=600))
-
-    parts.append(svg_text(f"{format_number(current_streak)} day", 272, 420, size=16, fill=GREEN, weight=700))
-    parts.append(svg_text("CURRENT STREAK", 272, 438, size=9, fill=SECONDARY, weight=600))
-
-    # Last updated
-    updated_text = "Last updated"
-    if last_updated:
-        try:
-            parsed = dt.datetime.fromisoformat(str(last_updated).replace("Z", "+00:00"))
-            updated_text = "Updated " + parsed.strftime("%d %b %Y")
-        except ValueError:
-            pass
-
-    parts.append(svg_text(updated_text, width - 28, height - 20, size=9, fill=MUTED, anchor="end"))
+        parts.append(svg_text(value, x, 206, size=18, fill=PRIMARY, weight=700))
+        parts.append(svg_text(label, x, 224, size=9, fill=SECONDARY, weight=600))
 
     write_svg(OUTPUTS["dsa"], svg_doc(width, height, "\n".join(parts)))
 
@@ -358,20 +340,40 @@ def generate_dsa_stats(data: dict | None = None) -> None:
 
 
 def parse_contributions(days_html: str) -> tuple[dict[dt.date, tuple[int, int]], int]:
-    cells = re.findall(
-        r'<td[^>]*?data-date="(\d{4}-\d{2}-\d{2})"[^>]*?data-level="(\d+)"[^>]*?(?:data-count="(\d+)")?[^>]*>',
-        days_html,
-    )
+    # 1. Parse total count from H2 if available
+    total_m = re.search(r'([0-9,]+)\s+contributions\s+in the last year', days_html)
+    total_count = int(total_m.group(1).replace(",", "")) if total_m else 0
+
+    # 2. Extract daily cells (handles any order of attributes in <td>)
+    cells_raw = re.findall(r'<td[^>]*?data-date="(\d{4}-\d{2}-\d{2})"[^>]*?data-level="(\d+)"', days_html)
+    if not cells_raw:
+        cells_raw = [(d, l) for l, d in re.findall(r'<td[^>]*?data-level="(\d+)"[^>]*?data-date="(\d{4}-\d{2}-\d{2})"', days_html)]
+
+    # 3. Tooltips to get exact count per day
+    tooltips = dict(re.findall(r'<tool-tip[^>]*?for="([^"]+)"[^>]*>(.*?)</tool-tip>', days_html, re.DOTALL))
+    id_date_map = dict(re.findall(r'<td[^>]*?id="([^"]+)"[^>]*?data-date="(\d{4}-\d{2}-\d{2})"', days_html))
+    date_id_map = {d: i for i, d in id_date_map.items()}
+
     out: dict[dt.date, tuple[int, int]] = {}
-    total = 0
+    computed_total = 0
 
-    for date_s, level_s, count_s in cells:
+    for date_s, level_s in cells_raw:
         day = dt.date.fromisoformat(date_s)
-        count = int(count_s or 0)
-        out[day] = (int(level_s), count)
-        total += count
+        level = int(level_s)
+        count = 0
+        tip_id = date_id_map.get(date_s)
+        if tip_id and tip_id in tooltips:
+            m = re.search(r'(\d+)\s+contribution', tooltips[tip_id])
+            if m:
+                count = int(m.group(1))
+        elif level > 0:
+            count = level
 
-    return out, total
+        out[day] = (level, count)
+        computed_total += count
+
+    final_total = total_count if total_count > 0 else computed_total
+    return out, final_total
 
 
 def fetch_contributions() -> tuple[dict[dt.date, tuple[int, int]], int]:
@@ -459,8 +461,19 @@ def generate_contributions() -> None:
     write_svg(OUTPUTS["contributions"], svg_doc(870, 235, "\n".join(inner)))
 
 # =========================================================
-# Card 4 — Popular repositories
+# Card 4 — Popular & Pinned repositories
 # =========================================================
+
+
+def fetch_pinned_names() -> list[str]:
+    """Scrape pinned repository names from user's GitHub profile."""
+    try:
+        response = get(f"https://github.com/{USERNAME}", headers={"Accept": "text/html"})
+        pinned = re.findall(r'<span class="repo"[^>]*>([^<]+)</span>', response.text)
+        return [name.strip() for name in pinned if name.strip()]
+    except Exception as exc:
+        print(f"Could not fetch pinned repos from profile: {exc}")
+        return []
 
 
 def fetch_repos() -> list[dict]:
@@ -475,14 +488,32 @@ def fetch_repos() -> list[dict]:
     )
 
     repos = response.json()
-    repos = [
-        repo
-        for repo in repos
-        if not repo.get("fork")
-        and not repo.get("archived")
-        and repo.get("name") != USERNAME
-    ]
-    repos.sort(
+    if not isinstance(repos, list):
+        return []
+
+    repo_map = {
+        r.get("name", "").lower(): r
+        for r in repos
+        if isinstance(r, dict)
+        and not r.get("fork")
+        and not r.get("archived")
+        and r.get("name") != USERNAME
+    }
+
+    # 1. Try to match pinned repositories first
+    pinned_names = fetch_pinned_names()
+    matched_pinned = []
+    for name in pinned_names:
+        lower = name.lower()
+        if lower in repo_map:
+            matched_pinned.append(repo_map[lower])
+
+    if matched_pinned:
+        return matched_pinned[:4]
+
+    # 2. Fallback to top repositories sorted by stars/updated
+    remaining = list(repo_map.values())
+    remaining.sort(
         key=lambda repo: (
             repo.get("stargazers_count", 0),
             repo.get("forks_count", 0),
@@ -490,7 +521,7 @@ def fetch_repos() -> list[dict]:
         ),
         reverse=True,
     )
-    return repos[:4]
+    return remaining[:4]
 
 
 def compact(text_value: str, width: int = 40) -> str:
@@ -538,48 +569,144 @@ def generate_popular_repos() -> None:
     write_svg(OUTPUTS["repos"], svg_doc(590, 350, "\n".join(inner)))
 
 # =========================================================
-# Card 5 — Achievement style milestones
+# Card 5 — Official GitHub Achievements
 # =========================================================
+
+ACHIEVEMENT_META = {
+    "pull shark": {
+        "title": "Pull Shark",
+        "desc": "Merged pull requests",
+        "fallback_url": "https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png",
+    },
+    "pair extraordinaire": {
+        "title": "Pair Extraordinaire",
+        "desc": "Co-authored commits",
+        "fallback_url": "https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png",
+    },
+    "quickdraw": {
+        "title": "Quickdraw",
+        "desc": "Closed issue or PR in <5m",
+        "fallback_url": "https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png",
+    },
+    "yolo": {
+        "title": "YOLO",
+        "desc": "Merged PR without review",
+        "fallback_url": "https://github.githubassets.com/assets/yolo-default-be0bbff42e13.png",
+    },
+    "galaxy brain": {
+        "title": "Galaxy Brain",
+        "desc": "Accepted discussion answers",
+        "fallback_url": "https://github.githubassets.com/assets/galaxy-brain-default-35a47d9ca46b.png",
+    },
+    "starstruck": {
+        "title": "Starstruck",
+        "desc": "Created 16★ repository",
+        "fallback_url": "https://github.githubassets.com/assets/starstruck-default-b6610abad518.png",
+    },
+}
+
+
+def fetch_badge_data_uri(url: str) -> str:
+    """Download badge image and convert to base64 Data URI."""
+    try:
+        res = get(url, timeout=10)
+        return "data:image/png;base64," + base64.b64encode(res.content).decode("ascii")
+    except Exception as exc:
+        print(f"Could not load badge image from {url}: {exc}")
+        return ""
+
+
+def fetch_github_achievements() -> list[dict]:
+    """Scrape unlocked GitHub achievements from user profile."""
+    try:
+        res = get(f"https://github.com/{USERNAME}", headers={"Accept": "text/html"})
+        matches = re.findall(
+            r'src="([^"]+)"[^>]*?alt="Achievement:\s*([^"]+)"',
+            res.text,
+        )
+        if not matches:
+            # Try alternate attribute ordering
+            matches = [
+                (src, alt)
+                for alt, src in re.findall(
+                    r'alt="Achievement:\s*([^"]+)"[^>]*?src="([^"]+)"',
+                    res.text,
+                )
+            ]
+
+        seen = set()
+        achievements = []
+        for src, name in matches:
+            clean_name = name.strip()
+            lower = clean_name.lower()
+            if lower not in seen:
+                seen.add(lower)
+                meta = ACHIEVEMENT_META.get(
+                    lower,
+                    {"title": clean_name, "desc": "GitHub Achievement", "fallback_url": src},
+                )
+                achievements.append({
+                    "name": meta["title"],
+                    "desc": meta["desc"],
+                    "image_url": src or meta.get("fallback_url", ""),
+                })
+
+        if achievements:
+            return achievements
+    except Exception as exc:
+        print(f"Failed to scrape GitHub achievements: {exc}")
+
+    # Fallback to default earned badges
+    return [
+        {
+            "name": ACHIEVEMENT_META["pull shark"]["title"],
+            "desc": ACHIEVEMENT_META["pull shark"]["desc"],
+            "image_url": ACHIEVEMENT_META["pull shark"]["fallback_url"],
+        },
+        {
+            "name": ACHIEVEMENT_META["pair extraordinaire"]["title"],
+            "desc": ACHIEVEMENT_META["pair extraordinaire"]["desc"],
+            "image_url": ACHIEVEMENT_META["pair extraordinaire"]["fallback_url"],
+        },
+    ]
 
 
 def generate_achievements(data: dict | None = None) -> None:
-    data = data or fetch_codio()
-    dsa = data.get("dsa", {}) or {}
-    github = data.get("github", {}) or {}
-    contest = data.get("contest", {}) or {}
-
-    items = [
-        ("DSA", f"{dsa.get('total', 0)} solved", "◆"),
-        ("STREAK", f"{data.get('maxStreak', 0)} days max", "↯"),
-        ("CONTEST", f"{contest.get('contests', 0)} contests", "★"),
-        ("ACTIVE", f"{data.get('totalActiveDays', 0)} days", "●"),
-        ("STARS", f"{github.get('stars', 0)} stars", "✦"),
-        ("PULL REQUESTS", f"{github.get('pullRequests', 0)} PRs", "⌁"),
-    ]
+    width, height = 320, 350
+    achievements = fetch_github_achievements()
 
     inner = [
-        svg_text("Achievements", 24, 38, size=17, fill=PRIMARY, weight=700),
-        svg_text("selected milestones", 24, 56, size=10, fill="#6D6D6D"),
+        svg_text("GitHub Achievements", 24, 38, size=18, fill=PRIMARY, weight=700),
+        svg_text("official profile badges", 24, 56, size=10, fill="#707070"),
     ]
 
-    for index, (label, value, icon) in enumerate(items):
-        row, col = divmod(index, 2)
-        x = 24 + col * 134
-        y = 78 + row * 64
+    y_start = 72
+    card_h = 105
+    card_w = 272
 
-        inner.extend(
-            [
-                f'<circle cx="{x + 18}" cy="{y + 18}" r="15" fill="#222" stroke="#363636"/>',
-                svg_text(icon, x + 18, y + 23, size=15, fill="#D5D5D5", anchor="middle"),
-                svg_text(label, x + 42, y + 15, size=8, fill="#8E8E8E", family="ui-monospace, SFMono-Regular, Menlo, monospace"),
-                svg_text(value, x + 42, y + 33, size=11, fill="#F1F1F1"),
-            ]
-        )
+    # Render up to 2 large earned badge cards
+    for idx, ach in enumerate(achievements[:2]):
+        y = y_start + idx * (card_h + 12)
+        inner.append(f'<rect x="24" y="{y}" width="{card_w}" height="{card_h}" rx="12" fill="{CARD_2}" stroke="#2C2C2C"/>')
 
-    inner.append('<line x1="24" y1="278" x2="292" y2="278" stroke="#2B2B2B"/>')
-    inner.append(svg_text("data source: Codolio JSON + GitHub API", 24, 300, size=9, fill="#686868"))
+        # Badge artwork
+        b64 = fetch_badge_data_uri(ach["image_url"])
+        if b64:
+            inner.append(
+                f'<image href="{b64}" x="34" y="{y + 20}" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>'
+            )
 
-    write_svg(OUTPUTS["achievements"], svg_doc(320, 328, "\n".join(inner)))
+        inner.extend([
+            svg_text(ach["name"], 108, y + 36, size=14, fill=PRIMARY, weight=700),
+            svg_text(ach["desc"], 108, y + 56, size=11, fill="#9A9A9A"),
+            f'<rect x="108" y="{y + 68}" width="78" height="20" rx="6" fill="#143e22" stroke="#26a641" stroke-width="0.8"/>',
+            svg_text("✦ Unlocked", 147, y + 82, size=9, fill="#39D353", weight=700, anchor="middle"),
+        ])
+
+    inner.append(f'<line x1="24" y1="{height - 36}" x2="{width - 24}" y2="{height - 36}" stroke="#2B2B2B"/>')
+    inner.append(svg_text("data source: GitHub Profile Achievements", 24, height - 16, size=9, fill="#686868"))
+
+    write_svg(OUTPUTS["achievements"], svg_doc(width, height, "\n".join(inner)))
 
 # =========================================================
 # Main
