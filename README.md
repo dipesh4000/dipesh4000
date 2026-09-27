@@ -44,10 +44,3 @@
 
 <br />
 
-<!-- Row 3: Contribution Graph (full width) -->
-<p align="center">
-  <img src="./assets/contributions.svg" alt="GitHub Contributions" width="100%" />
-</p>
-
-<br />
-
