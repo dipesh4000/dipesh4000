@@ -51,7 +51,3 @@
 
 <br />
 
-<p align="center">
-  <sub>Automated dashboard cards • GitHub contributions, achievements, and repositories refresh daily</sub>
-</p>
-
