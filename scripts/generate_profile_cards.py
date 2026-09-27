@@ -729,7 +729,7 @@ def main() -> None:
         print("Skipping Codolio DSA card (GENERATE_DSA=false).")
 
     # Remaining dashboard cards
-    generate_contributions()
+    # generate_contributions()
     generate_popular_repos()
     generate_achievements(codio)
 
