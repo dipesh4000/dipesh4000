@@ -8,9 +8,9 @@ import os
 import re
 import textwrap
 from pathlib import Path
+import json as _json
+import urllib.request as _urllib_request
 from urllib.parse import urlencode
-
-import requests
 
 # =========================================================
 # Configuration
@@ -65,13 +65,38 @@ UA = {"User-Agent": "dipesh4000-github-profile-dashboard"}
 # =========================================================
 
 
-def get(url: str, *, headers: dict | None = None, timeout: int = 20):
+class _Response:
+    """Minimal response wrapper around urllib so the rest of the code is unchanged."""
+
+    def __init__(self, data: bytes, status: int) -> None:
+        self._data = data
+        self.status = status
+
+    def raise_for_status(self) -> None:
+        if self.status >= 400:
+            raise RuntimeError(f"HTTP error {self.status}")
+
+    @property
+    def text(self) -> str:
+        return self._data.decode("utf-8", errors="replace")
+
+    @property
+    def content(self) -> bytes:
+        return self._data
+
+    def json(self) -> object:
+        return _json.loads(self._data)
+
+
+def get(url: str, *, headers: dict | None = None, timeout: int = 20) -> _Response:
     merged = dict(UA)
     if headers:
         merged.update(headers)
-    response = requests.get(url, headers=merged, timeout=timeout)
-    response.raise_for_status()
-    return response
+    req = _urllib_request.Request(url, headers=merged)
+    with _urllib_request.urlopen(req, timeout=timeout) as resp:
+        data = resp.read()
+        status = resp.status
+    return _Response(data, status)
 
 
 def esc(value: object) -> str:
@@ -404,7 +429,7 @@ def generate_contributions() -> None:
     col_w = size + gap
 
     inner: list[str] = [
-        svg_text(f"{total:,} contributions in the last year", 34, 48, size=23, fill=TEXT, weight=700),
+        svg_text(f"{total:,} contributions in the last year", 34, 48, size=23, fill=PRIMARY, weight=700),
         '<rect x="752" y="28" width="82" height="34" rx="8" fill="#202020" stroke="#2D2D2D"/>',
         svg_text(dt.date.today().year, 767, 50, size=12, fill="#C6C6C6"),
         svg_text("⌄", 821, 50, size=10, fill="#6F6F6F", anchor="end"),
@@ -481,7 +506,7 @@ def generate_popular_repos() -> None:
         repos = []
 
     inner = [
-        svg_text("Popular repositories", 28, 42, size=21, fill=TEXT, weight=700),
+        svg_text("Popular repositories", 28, 42, size=21, fill=PRIMARY, weight=700),
         svg_text("⌄", 205, 42, size=11, fill="#777"),
     ]
 
@@ -533,7 +558,7 @@ def generate_achievements(data: dict | None = None) -> None:
     ]
 
     inner = [
-        svg_text("Achievements", 24, 38, size=17, fill=TEXT, weight=700),
+        svg_text("Achievements", 24, 38, size=17, fill=PRIMARY, weight=700),
         svg_text("selected milestones", 24, 56, size=10, fill="#6D6D6D"),
     ]
 
